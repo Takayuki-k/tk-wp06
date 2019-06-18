@@ -1,0 +1,346 @@
+@charset "utf-8";
+/*
+  Theme Name: TK-WP06
+  Text Domain: TK-WP06
+  Description: 小西高幸のWordPressテーマ06です。
+  Author: 小西高幸
+  Version: 1.0
+  Tags: responsive-layout, two-columns, right-sidebar, custom-header, custom-menu,
+  License: GNU General Public License
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* layout______________________________ */
+body {}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header__________ */
+header {
+  padding: 50px 0;
+}
+header h1 {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+.swiper-container {
+  margin-bottom: 2em !important;
+}
+
+/* top-nav__________ */
+.top-nav {
+  border-top: 3px double #777;
+  border-bottom: 3px double #777;
+  margin: 0 0 2em;
+  padding: 0 1em !important;
+}
+.top-nav li {}
+.top-nav li a {
+  display: inline-block;
+  color: inherit;
+  font-size: small;
+  font-weight: bold;
+  padding: 1em;
+  margin: 0 1em;
+}
+.top-nav li a:hover,
+.top-nav li a:focus {
+  background: #ddd;
+  text-decoration: none;
+}
+.navbar-toggler {
+  margin: .5em;
+}
+
+/* main-content__________ */
+main {}
+.single {}
+.single h2,
+.page h2 {
+  color: #333;
+  border-top: 3px double #777;
+  border-bottom: 3px double #777;
+  margin: .5em;
+  padding: .5em;
+}
+.single h2 a,
+.page h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img.attachment-post-thumbnail {
+  display: block;
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin: 0 auto .8em;
+}
+img.attachment-post-thumbnail:active,
+img.attachment-post-thumbnail:hover,
+img.attachment-post-thumbnail:focus,
+img.attachment-post-thumbnail:visited,
+img.attachment-post-thumbnail:focus-within　{
+  opacity: .7;
+}
+
+.post {
+  max-width: 650px;
+  margin: 0 auto 2em;
+}
+
+.section {}
+.post-meta {
+  font-size: small;
+  margin-bottom: .5em;
+  padding-left: 2.5em;
+}
+.post-date:after {
+  content: "|";
+  padding: 0 .5em;
+}
+.article {
+  padding-left: 1em;
+}
+
+/* breadcrumbs__________ */
+#breadcrumbs ul {
+  background: inherit;
+  list-style: none;
+  font-size: small;
+  padding: 0;
+}
+#breadcrumbs li {
+  display: inline;
+  margin: 0;
+}
+#breadcrumbs li + li:before {
+  content: ">";
+  padding: .5em;
+}
+
+/* pager__________ */
+.pagenavi {
+  text-align: center;
+  margin: 2rem 0;
+}
+.pagenavi .page-numbers {
+  padding: 0 .6rem;
+}
+.pager {
+  margin: 1rem 2rem;
+}
+.prev-right {
+  float: right;
+  text-align: right;
+}
+.prev-right:after {
+  content: "»";
+  padding-left: .3rem;
+}
+.next-left {
+  float: left;
+  text-align: left;
+}
+.next-left:before {
+  content: "«";
+  padding-right: .3rem;
+}
+
+/* comment__________ */
+#comment_area {
+  padding: 5px;
+}
+#comment_area a {}
+#comment_area .depth-1 {
+  margin: 4px;
+}
+#comment_area .comment-body {
+  border: 1px solid #80929e;
+  padding: 2px;
+}
+#comment_area .children {
+  padding-left: 5%;
+}
+#comment_area .children .comment-body {
+  border-top: none;
+}
+#commentform {}
+#submit {}
+
+/* error404__________*/
+#error404 {}
+
+/*sidebar__________ */
+aside {
+  padding: 0 1rem;
+}
+.widget {
+  margin: 0 0 2em 1em;
+}
+.widget ul,
+.widget ol {
+  list-style: none;
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+aside a {}
+aside a:hover,
+aside a:focus {}
+
+/* search__________ */
+#searchform {
+  margin-left: 2em;
+}
+#s {
+  width: 80%;
+}
+#searchsubmit {
+  border-radius: 3px/4px;
+  outline: 0;
+}
+#searchsubmit:hover,
+#searchsubmit:focus {
+  position: relative;
+  top: 2px;
+}
+#searchsubmit:active {
+  position: relative;
+  top: 3px;
+}
+
+/* footer__________ */
+footer {}
+footer .copy {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+footer .copy:before,
+footer .copy:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  display: block;
+}
+footer .copy:before {
+  background: linear-gradient( -100deg, #555, transparent);
+}
+footer .copy:after {
+  background: linear-gradient( 100deg, #555, transparent);
+}
+footer span {
+  padding: 0 .7em;
+}
+footer a {
+  color: inherit;
+}
+
+/* contact-form__________ */
+input,
+textarea {
+  width: 100%;
+}
+input[type="checkbox"],
+input[type="submit"] {
+  width: auto;
+}
+fieldset#contactform7 {
+  background: #999;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 1rem;
+  line-height: 1.4em;
+}
+fieldset#contactform7 p {
+  margin: 0 0 .7rem;
+}
+fieldset#contactform7 p:last-child {
+  margin: 0;
+}
+fieldset#contactform7 p b {
+  color: #c00;
+}
+fieldset#contactform7 p .wpcf7-textarea,
+fieldset#contactform7 p .wpcf7-text {
+  width: 95%;
+  border: none;
+  border-radius: 11px;
+  margin-top: 0;
+  padding: 0 10px;
+  font-size: 1em;
+  color: #0cc;
+}
+fieldset#contactform7 p .wpcf7-textarea {
+  padding: 5px 10px;
+  margin-top: .2em;
+  line-height: 1.6em;
+}
+fieldset#contactform7 p .wpcf7-text {
+  height: 22px;
+}
+fieldset#contactform7 p input.wpcf7-submit{
+  cursor: pointer;
+  font-size: 130%;
+  padding: 1px 1em 3px;
+  margin: 0;
+  border-style: none;
+  color: #fff;
+  background: #89c040;
+  border-radius: 15px;
+}
+fieldset#contactform7 p input.wpcf7-submit:hover {
+  background: #428000;
+}
+
+/* rwd ______________________________ */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    font-size: 101%;
+  }
+  .post {
+    height: auto;
+    margin: 2em 0;
+  }
+  .thumbnail img{
+    margin: 0 auto;
+  }
+  .next-left,
+  .prev-right {
+    float: none;
+  }
+  aside {
+    line-height: 1.8;
+  }
+}
+
+/* wp ______________________________*/
+main article .clearfix p { margin: 15px 0;}
+main article .clearfix strong { font-weight: bold; }
+main article .clearfix em { font-style: italic; }
+main article .clearfix h1 { font-size: 2em; }
+main article .clearfix h2 { font-size: 1.5em; }
+main article .clearfix h3 { font-size: 1.25em; }
+main article .clearfix h4 { font-size: 1em; }
+main article .clearfix h5 { font-size: .8em; }
+main article .clearfix h6 { font-size: .6em; }
+main article .clearfix ul, ol { padding-left: 30px;}
+main article .clearfix blockquote { display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 40px; -webkit-margin-end: 40px;}
+main article .clearfix img { height: auto; max-width: 100%;}
+main article .clearfix .aligncenter { display: block; margin: 0 auto;}
+main article .clearfix .alignright { float: right; margin: 0 0 10px 20px;}
+main article .clearfix .alignleft { float: left; margin: 0 20px 10px 0;}
+main article .clearfix .wp-caption { border: 1px solid #ddd; text-align: left; background-color: #f3f3f3; padding: 5px; border-radius: 3px;}
+main article .clearfix .wp-caption img { margin: 0; padding: 0; border: 0 none;}
+main article .clearfix .wp-caption p.wp-caption-text { font-size: 14px; line-height: 1.5; margin: 0; padding: 0;}
+

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.3",
+  "icons": [
+    {
+      "src": "\/img\/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/img\/favicon-152x152.png",
+      "sizes": "152x152",
+      "type": "image\/png"
+    },
+    {
+      "src": "\/img\/favicon-256x256.png",
+      "sizes": "256x256",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "#e1fffe",
+  "display": "browser"
+}
